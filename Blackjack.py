@@ -4,11 +4,30 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
 def get_card():
+    """
+    This function returns a random card from the predefined list of cards.
+
+    Parameters:
+    None
+
+    Returns:
+    int: A random card from the list.
+    """
     card = cards[random.randint(0, len(cards) - 1)]
     return card
 
 
 def calculate_score(list_of_cards):
+    """
+    This function calculates the score of a given list of cards.
+    If the score exceeds 21 and there is an 'Ace' in the list, it converts the 'Ace' from 11 to 1.
+
+    Parameters:
+    list_of_cards (list): A list of integers representing the cards.
+
+    Returns:
+    int: The calculated score.
+    """
     score = 0
     for card in list_of_cards:
         score += card
@@ -22,6 +41,15 @@ def calculate_score(list_of_cards):
 
 
 def Game_Fin(condition):
+    """
+    This function prints the final result of the game.
+
+    Parameters:
+    condition (str): A string indicating the result of the game ("Win", "Lost", "Draw").
+
+    Returns:
+    None
+    """
     print(f"Your cards are {player_card} and score is {player_score}")
     print(f"Computer's cards are {computer_card} and score is {computer_score}")
     print(f"You {condition}!")
