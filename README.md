@@ -19,7 +19,7 @@ This is a simple console-based Blackjack game implemented in Python. The game al
 ## How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/python-blackjack-game.git
+   git clone https://github.com/AhmadBinTariq/Python-Project-Blackjack-Game
 3. Run the Python script:
    python Blackjack.py
 
